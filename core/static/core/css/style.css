@@ -1,0 +1,297 @@
+/*principal*/
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../img/Hos.png) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    overflow: hidden;
+    background-color: #252932;
+    margin-bottom: 20px;
+}
+
+.wrapper{
+    width: 90%;
+    max-width: 1500px;
+    margin: auto;
+    overflow:hidden;
+}
+
+.logotipo{
+    color: white;
+    font-size: 50px;
+    line-height: 100px;
+    float: left;
+}
+
+header nav{
+    float: right;
+    line-height: 100px;
+}
+
+header nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    border-radius: 50px;
+}
+
+header nav a:hover{
+    background: #93ffd8;
+}
+
+footer{
+    background-color: #252932;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    
+}
+
+footer a{
+    color:white;
+}
+
+/*Iniciar*/
+.login {
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+  
+.login .logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+  
+.login h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+  
+.login label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+  
+.login input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+  
+.login input[type="text"], .login input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+  
+.login input[type="button"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #93ffd8;
+    color: black;
+    font-size: 18px;
+    border-radius: 20px;
+}
+  
+.login input[type="button"]:hover {
+    cursor: pointer;
+    background: white;
+    color: #000;
+}
+  
+.login a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+  
+.login a:hover {
+    color: #fff;
+}
+
+/*Datos*/
+.registro {
+    width: 320px;
+    height: 500px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.registro h4 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.registro label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+  
+.registro input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+  
+.registro input[type="text"], .registro input[type="password"],.registro input[type="email"],.registro input[type="tel"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.registro input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #93ffd8;
+    color: black;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.registro input[type="submit"]:hover {
+    cursor: pointer;
+    background: white;
+    color: #000;
+}
+
+/*Carrito*/
+.page-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.product-container {
+    margin: 15px;
+    padding: 2px 16px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    background-color: white;
+}
+.product-container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.product-container img{
+    width: 200px;
+}
+.product-container h3{
+    text-align: center;
+}
+.page-content input[type="button"] {
+    border: none;
+    outline: none;
+    height: 30px;
+    background: #93ffd8;
+    color: black;
+    font-size: 18px;
+    border-radius: 20px;
+
+    position: absolute;
+    transition-duration: 1s;
+    left: 80px;
+    bottom: -10%;
+}
+
+.page-content input[type="button"]:hover {
+    cursor: pointer;
+    background: white;
+    color: #000;
+}
+
+/*Reseta*/
+.contenedor-formulario{
+    background-color: white;
+    width: 800px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.contenedor-formulario img{
+    width: 75px;
+    position: absolute;
+    top: 0.5%;
+    right: 0.5%;
+    border-radius: 50%;
+}
+.doctor h4{
+    text-align:center;
+    margin: 0;
+}
+.pasiente h6 {
+    text-align: left;
+    padding-left: 15px;
+}
+.contenedor-formulario input[type="button"] {
+    border: none;
+    outline: none;
+    width: 100px;
+    height: 40px;
+    background: #93ffd8;
+    color: black;
+    font-size: 18px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: -15%;
+    left: 44%;
+}
+  
+.contenedor-formulario input[type="button"]:hover {
+    cursor: pointer;
+    background: white;
+    color: #000;
+}
+
+.pasiente img {
+    position: absolute;
+}

@@ -1,0 +1,19 @@
+[
+    {
+        "title": "paracetamol",
+        "image": "img/paracetamol.PNG"
+         
+    },
+    {
+        "title": "ibuprofeno",
+        "image": "img/ibuprofeno.PNG"
+    },
+    {
+        "title": "tapsin-dia",
+        "image": "img/tapsin-dia.PNG"
+    },
+    {
+        "title": "tapsin-noche",
+        "image": "img/tapsin-noche.PNG"
+    }
+]

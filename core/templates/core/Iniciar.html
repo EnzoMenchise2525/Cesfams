@@ -1,0 +1,48 @@
+{% load static %}
+
+<script>
+  function IniciarSecion(){
+    var usuario,contrasena;
+
+    usuario = document.getElementById("Usuario").value;
+    contrasena = document.getElementById("Contrasena").value;
+
+    if (usuario == "leonardo" && contrasena == "123"){
+        window.location="Datos.html";
+    }
+    else if (usuario == "sebastian" && contrasena == "hola"){
+        window.location="http://127.0.0.1:8000/admin";
+    }else{
+        alert("¡Credenciales Invalidas!"); 
+    }
+}
+</script>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="login">
+        <img src="{% static 'core/img/CESFAM.png' %}" class="logo" alt="logo Image">
+        <h1>Bienvenido</h1>
+        <form>
+
+          <Label for="Usuario">Usuario</Label>
+          <input id="Usuario" type="text" name="Usuario" placeholder="Usuario">
+
+          <label for="Contrasena">Contraseña</label>
+          <input id="Contrasena" type="password" name="Contrasena" placeholder="Contraseña">
+
+          <input type="button" value="Iniciar sesion" id="boton" onclick="IniciarSecion()">
+        </form>
+      </div>
+</body>
+</html>
